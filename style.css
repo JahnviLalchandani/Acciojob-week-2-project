@@ -83,6 +83,7 @@ li a {
     background-color: #FCAF02;
     font-weight: 700;
     font-size: 18px;
+    cursor: pointer;
 
 }
 
@@ -152,6 +153,7 @@ input:focus {
     background-color: #FCAF02;
     color: black;
     align-self: center;
+    cursor: pointer;
 }
 
 .table-section {
