@@ -52,10 +52,39 @@ li a {
     color: black;
 }
 
+@media (max-width: 600px) {
+    .header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 0;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-left: 16px;
+    }
+
+    ul {
+        gap: 12px;
+        margin-inline-end: 16px;
+        flex-wrap: wrap;
+    }
+
+    li a {
+        font-size: 14px;
+    }
+}
+
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
 }
 
 .intro-section {
@@ -131,6 +160,29 @@ form {
     color: #FCAF02;
 }
 
+@media (max-width: 600px) {
+    .intro-section h1 {
+        font-size: 22px;
+        margin-left: 16px;
+    }
+
+    .intro-section p {
+        font-size: 16px;
+        margin-left: 16px;
+    }
+
+    .btn,
+    .form-btn {
+        width: 100%;
+        max-width: 280px;
+        margin-left: 16px;
+    }
+
+    .form-section h2 {
+        font-size: 24px;
+    }
+}
+
 input {
     box-sizing: border-box;
     width: 100%;
@@ -175,7 +227,8 @@ input:focus {
 }
 
 .table-section {
-    padding: 32px 32px;
+    padding: 32px 16px;
+    overflow-x: auto;
 }
 
 table {
@@ -185,6 +238,7 @@ table {
     box-sizing: border-box;
     color: #FCAF02;
     font-size: 16px;
+    min-width: 500px;
 }
 
 th {
